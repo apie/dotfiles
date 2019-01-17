@@ -1,0 +1,5 @@
+backtick 1 15 15 /usr/bin/whoami
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%w%=%1`@%H - %m/%d %c"
+
