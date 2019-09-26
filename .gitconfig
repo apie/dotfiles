@@ -1,0 +1,20 @@
+[user]
+  email = 1049485+apie@users.noreply.github.com
+  name = Denick
+[push]
+  default = simple
+[alias]
+  pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
+  diffw = diff --color-words
+  ci = commit -a
+  co = checkout
+  st = status
+  br = branch
+[core]
+  excludesfile = ~/.gitignore
+[log]
+  decorate = auto
+[rebase]
+  autosquash = true
+[pull]
+  rebase = true
