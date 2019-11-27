@@ -6,6 +6,7 @@
 [alias]
   pushup = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
   diffw = diff --color-words
+  showw = show --color-words
   ci = commit -a
   co = checkout
   st = status

@@ -32,3 +32,5 @@ map <F5> :!git diff %<enter><enter>
 map <F6> :!git status<enter>
 map <F7> :!git diff -w %<enter><enter>
 
+filetype plugin on
+
