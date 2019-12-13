@@ -1,6 +1,7 @@
 [user]
   email = 1049485+apie@users.noreply.github.com
   name = Denick
+  signingkey = 9689E645F568CF10E7903A6E22B2D359F16F24AB
 [push]
   default = simple
 [alias]
