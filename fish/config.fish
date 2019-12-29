@@ -15,6 +15,7 @@ abbr pull git pull
 abbr push git push
 abbr pushfl git pushfl
 abbr pushup git pushup
+abbr rebase git rebase
 abbr s git status
 abbr show git show
 abbr showw git showw
