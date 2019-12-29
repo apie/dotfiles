@@ -22,3 +22,4 @@ abbr stash git stash
 abbr status git status
 # Other
 abbr d ls
+abbr avc ssh apie@denickm-vps
