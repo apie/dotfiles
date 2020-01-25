@@ -23,6 +23,7 @@ autocmd BufReadPost *  if line("'\"") > 0 && line("'\"") <= line("$") | exe "nor
 set expandtab
 set autoindent
 set showmatch " Shows matching brackets etc.
+set hlsearch
 set incsearch " Incremental search highlighting
 
 map <F2> :w<enter>:!pytest -sv %<enter>
