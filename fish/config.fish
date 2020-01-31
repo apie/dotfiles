@@ -11,6 +11,7 @@ abbr diffw git diffw
 abbr fetch git fetch
 abbr g git
 abbr log git log
+abbr l git log
 abbr pull git pull
 abbr push git push
 abbr pushfl git pushfl
@@ -21,6 +22,9 @@ abbr show git show
 abbr showw git showw
 abbr stash git stash
 abbr status git status
+abbr reset git reset
+abbr revert git revert
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
+abbr cropr cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish
