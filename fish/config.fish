@@ -27,4 +27,4 @@ abbr revert git revert
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
-abbr cropr cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish
+abbr cropr "cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish"
