@@ -24,6 +24,7 @@ abbr stash git stash
 abbr status git status
 abbr reset git reset
 abbr revert git revert
+abbr bisect git bisect
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
