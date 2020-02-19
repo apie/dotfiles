@@ -29,3 +29,4 @@ abbr bisect git bisect
 abbr d ls
 abbr avc ssh apie@denickm-vps
 abbr cropr "cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish"
+abbr sp ./manage.py shell_plus --quiet-load --ptipython
