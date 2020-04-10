@@ -4,8 +4,10 @@ abbr add git add
 abbr branch git branch
 abbr checkout git checkout
 abbr cherry-pick git cherry-pick
+abbr ch git cherry-pick
 abbr co git checkout
 abbr commit git commit
+abbr c git commit
 abbr diff git diff
 abbr diffw git diffw
 abbr fetch git fetch
