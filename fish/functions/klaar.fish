@@ -1,9 +1,10 @@
 function klaar
     # Let the user know when a command is done. A different message for success/failure is used.
     # Usage:
-    # 1. command | klaar
-    # 2. klaar command
-    # In the second case also the command is printed.
+    # 1. <command> | klaar
+    # 2. <command>; klaar
+    # 3. klaar <command>
+    # In the last case also the command is printed.
 
     set KLAAR 'Ik ben klaar'
     set FOUT 'Er ging iets mis'
