@@ -32,3 +32,18 @@ map <F4> :w<enter>:!python3 %<enter>
 map <F5> :!git diff %<enter><enter>
 map <F6> :!git status<enter>
 map <F7> :!git diff -w %<enter><enter>
+map <F8> :w<enter>:! ./%<enter>
+
+set wildmenu "tab complete menu showing matches (much like in fish)
+
+"file browsing
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_liststyle=3  "tree
+
+set showcmd "show the keys you are pressing
+
+let mapleader = "-"
+"(python) comment line and move one line down (non repeatable)
+nnoremap <C-\> 0i#<ESC>j
