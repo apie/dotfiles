@@ -13,6 +13,7 @@
   st = status
   br = branch
   pushfl = push --force-with-lease
+  torelease = "!git log $(git describe --tags --abbrev=0)..master --oneline"
 [core]
   excludesfile = ~/.gitignore
 [log]
