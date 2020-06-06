@@ -10,6 +10,7 @@ set tabstop=4
 set softtabstop=4
 " pressing tab
 set shiftwidth=4
+set expandtab
 
 set statusline=%<%F\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 " Add full file path to your existing statusline:  set statusline=%<%F\ %h%m%r%=%-14.(%l,%c%V%)\ %P
@@ -20,7 +21,6 @@ filetype plugin indent on
 set paste
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *  if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-set expandtab
 set autoindent
 set showmatch " Shows matching brackets etc.
 set hlsearch
