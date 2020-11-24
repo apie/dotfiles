@@ -34,6 +34,7 @@ abbr avc ssh apie@denickm-vps
 abbr cropr "cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish"
 abbr cloudfarm "cd ~/clones/cloud_farm/; and source ~/.virtualenvs/cloud_farm/bin/activate.fish"
 abbr sp ./manage.py shell_plus --quiet-load --ptipython
+abbr com docker-compose run --rm pre-deploy
 
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
