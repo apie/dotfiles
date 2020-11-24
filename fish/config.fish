@@ -1,4 +1,4 @@
-set fish_greeting
+set fish_greeting #No greeting
 # Git aliases
 abbr add git add
 abbr branch git branch
