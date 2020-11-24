@@ -47,3 +47,8 @@ set showcmd "show the keys you are pressing
 let mapleader = "-"
 "(python) comment line and move one line down (non repeatable)
 nnoremap <C-\> 0i#<ESC>j
+
+"Surround word with parentheses (non repeatable)
+nnoremap <leader>h viw<esc>a)<esc>hbi(<esc>lel
+"Surround word with backticks (non repeatable)
+nnoremap <leader>b viw<esc>a`<esc>hbi`<esc>lel
