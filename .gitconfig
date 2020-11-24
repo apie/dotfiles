@@ -22,3 +22,7 @@
   autosquash = true
 [pull]
   rebase = true
+[diff]
+  colorMoved = zebra
+[fetch]
+  prune = true
