@@ -26,13 +26,20 @@ set showmatch " Shows matching brackets etc.
 set hlsearch
 set incsearch " Incremental search highlighting
 
+"save + pytest
 map <F2> :w<enter>:!pytest -sv %<enter>
+"save
 map <F3> :w<enter>
-map <F4> :w<enter>:!python3 %<enter>
+"save + run
+map <F4> :w<enter>:! ./%<enter>
+"git diff current file
 map <F5> :!git diff %<enter><enter>
+"git status
 map <F6> :!git status<enter>
+"git diff current file ignoring whitespace
 map <F7> :!git diff -w %<enter><enter>
-map <F8> :w<enter>:! ./%<enter>
+"run current file with python
+map <F8> :w<enter>:!python3 %<enter>
 
 set wildmenu "tab complete menu showing matches (much like in fish)
 
