@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.minimap.enabled": false,
+    "vim.vimrc.enable": true,
+    "editor.lineNumbers": "relative"
+}
