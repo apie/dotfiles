@@ -1,6 +1,8 @@
 colorscheme desert
 noremap ; :
-set number
+" turn hybrid line numbers on
+set number relativenumber
+set nu rnu
 set ignorecase
 
 set noswapfile
