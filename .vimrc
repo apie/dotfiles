@@ -33,7 +33,7 @@ map <F3> :w<enter>
 "save + run
 map <F4> :w<enter>:! ./%<enter>
 "git diff current file
-map <F5> :!git diff %<enter><enter>
+map <F5> :!git diff %<enter>
 "git status
 map <F6> :!git status<enter>
 "git diff current file ignoring whitespace
