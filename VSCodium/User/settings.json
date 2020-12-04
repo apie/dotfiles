@@ -13,5 +13,6 @@
     "workbench.editor.highlightModifiedTabs": true,
     "explorer.confirmDelete": false,
     "editor.wordWrap": "on",
-    "editor.wrappingIndent": "indent"
+    "editor.wrappingIndent": "indent",
+    "workbench.editor.enablePreview": false
 }
