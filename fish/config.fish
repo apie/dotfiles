@@ -8,6 +8,7 @@ abbr ch git cherry-pick
 abbr co git checkout
 abbr commit git commit
 abbr c git commit
+abbr ca git commit -am
 abbr diff git diff
 abbr diffw git diffw
 abbr fetch git fetch
@@ -36,6 +37,7 @@ abbr cloudfarm "cd ~/clones/cloud_farm/; and source ~/.virtualenvs/cloud_farm/bi
 abbr sp ./manage.py shell_plus --quiet-load --ptipython
 abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
+abbr logs journalctl -r
 
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
