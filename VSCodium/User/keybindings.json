@@ -12,5 +12,13 @@
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+meta+z",
+        "command": "workbench.action.files.saveAll"
+    },
+    {
+        "key": "ctrl+meta+z",
+        "command": "workbench.action.files.saveFiles"
     }
 ]

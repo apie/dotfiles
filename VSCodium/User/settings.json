@@ -1,12 +1,11 @@
 {
     "window.zoomLevel": 0,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.minimap.enabled": false,
     "vim.vimrc.enable": true,
-    "editor.lineNumbers": "relative",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -14,5 +13,13 @@
     "explorer.confirmDelete": false,
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "prettier.documentSelectors": [
+        "*.{ts,tsx}"
+    ],
+    "prettier.requireConfig": true,
+    "prettier.configPath": "frontend/.prettierrc.js",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.startupEditor": "newUntitledFile"
 }
