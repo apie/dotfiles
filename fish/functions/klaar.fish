@@ -6,14 +6,11 @@ function klaar
     # 3. klaar <command>
     # In the last case also the command is printed.
 
-    set KLAAR 'Ik ben klaar'
-    set FOUT 'Er ging iets mis'
     if eval $argv
-        espeak -v nl "$KLAAR"
-        and notify-send "$KLAAR" "$argv"
-
+        set MSG 'Ik ben klaar'
     else
-        espeak -v nl "$FOUT"
-        and notify-send "$FOUT" "$argv"
+        set MSG 'Er ging iets mis'
     end
+    notify-send "$MSG" "$argv"
+    espeak -v nl "$MSG"
 end
