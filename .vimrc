@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme delek
 noremap ; :
 set number
 set ignorecase
