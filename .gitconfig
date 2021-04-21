@@ -11,6 +11,8 @@
   ci = commit -a
   co = checkout
   st = status
+  s = status
+  l = log
   br = branch
   pushfl = push --force-with-lease
   torelease = "!git log $(git describe --tags --abbrev=0)..master --oneline"
