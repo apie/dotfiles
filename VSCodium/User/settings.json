@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 0,
     "files.autoSave": "off",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -21,5 +20,15 @@
     "prettier.requireConfig": true,
     "prettier.configPath": "frontend/.prettierrc.js",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
 }
