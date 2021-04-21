@@ -29,11 +29,14 @@ abbr reset git reset
 abbr revert git revert
 abbr bisect git bisect
 abbr reset git reset
+abbr reflog git reflog
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
 abbr cropr "cd ~/clones/cropr_project/; and source ~/.virtualenvs/cropr_project/bin/activate.fish"
 abbr cloudfarm "cd ~/clones/cloud_farm/; and source ~/.virtualenvs/cloud_farm/bin/activate.fish"
+abbr scan "cd ~/clones/scan_project/; and source ~/.virtualenvs/scan_project/bin/activate.fish"
+abbr ncn "cd ~/clones/ncn_project/; and source ~/.virtualenvs/ncn_project/bin/activate.fish"
 abbr sp ./manage.py shell_plus --quiet-load --ptipython
 abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
