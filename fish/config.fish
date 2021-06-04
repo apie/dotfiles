@@ -36,6 +36,7 @@ abbr cloudfarm "cd ~/clones/cloud_farm/; and source ~/.virtualenvs/cloud_farm/bi
 abbr scan "cd ~/clones/scan_project/; and source ~/.virtualenvs/scan_project/bin/activate.fish"
 abbr ncn "cd ~/clones/ncn_project/; and source ~/.virtualenvs/ncn_project/bin/activate.fish"
 abbr mben "cd ~/clones/mijnboerennatuur/; and source ~/.virtualenvs/mijnboerennatuur/bin/activate.fish"
+abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
