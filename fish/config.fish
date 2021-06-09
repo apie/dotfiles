@@ -45,5 +45,10 @@ abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 
+#Aliases
+alias manage 'docker-compose run --rm pre-deploy ./manage.py'
+
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
+# Fish autocomplete for 'manage' alias
+__fish_complete_django manage
