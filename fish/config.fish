@@ -47,8 +47,12 @@ abbr logs journalctl -r
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
+# cropr manage
+alias cmanage 'docker-compose run --rm pre-deploy ./manage.py'
 
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
 # Fish autocomplete for 'manage' alias
 __fish_complete_django manage
+# Cmanage has own completion file
+__fish_complete_django_cropr cmanage
