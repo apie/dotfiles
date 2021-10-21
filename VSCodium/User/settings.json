@@ -31,5 +31,7 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "workbench.editor.untitled.hint": "hidden"
+    "workbench.editor.untitled.hint": "hidden",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.tabs.enabled": true
 }
