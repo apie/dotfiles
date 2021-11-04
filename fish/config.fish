@@ -44,6 +44,7 @@ abbr sp ./manage.py shell_plus --quiet-load --ptipython
 abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
+abbr weeknumber date +%V
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
