@@ -18,8 +18,8 @@
     "prettier.documentSelectors": [
         "*.{ts,tsx}"
     ],
-    "prettier.requireConfig": true,
-    "prettier.configPath": "frontend/.prettierrc.js",
+    "prettier.configPath": "",
+    "editor.formatOnSave": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.startupEditor": "newUntitledFile",
     "todo-tree.general.tags": [
