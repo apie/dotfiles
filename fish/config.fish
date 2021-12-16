@@ -45,6 +45,7 @@ abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 abbr weeknumber date +%V
+abbr rdiff diff
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
