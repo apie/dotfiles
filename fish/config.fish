@@ -40,7 +40,6 @@ abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
 abbr d ls
 abbr avc ssh apie@denickm-vps
-abbr sp ./manage.py shell_plus --quiet-load --ptipython
 abbr com docker-compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
@@ -49,6 +48,7 @@ abbr rdiff diff
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
+abbr sp manage shell_plus --quiet-load
 # cropr manage
 alias cmanage 'docker-compose run --rm pre-deploy ./manage.py'
 
