@@ -1,40 +1,40 @@
 {
-    "files.autoSave": "afterDelay",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.minimap.enabled": false,
-    "vim.vimrc.enable": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.editor.highlightModifiedTabs": true,
-    "explorer.confirmDelete": false,
-    "editor.wordWrap": "on",
-    "editor.wrappingIndent": "indent",
-    "workbench.editor.enablePreview": false,
-    "todo-tree.tree.showScanModeButton": false,
-    "prettier.documentSelectors": [
-        "*.{ts,tsx}"
-    ],
-    "prettier.configPath": "",
-    "editor.formatOnSave": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.startupEditor": "newUntitledFile",
-    "todo-tree.general.tags": [
-        "BUG",
-        "HACK",
-        "FIXME",
-        "TODO",
-        "XXX",
-        "[ ]",
-        "[x]"
-    ],
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "workbench.editor.untitled.hint": "hidden",
-    "terminal.integrated.defaultProfile.linux": "fish",
-    "terminal.integrated.tabs.enabled": true,
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "files.autoSave": "afterDelay",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "vim.vimrc.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.highlightModifiedTabs": true,
+  "explorer.confirmDelete": false,
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "workbench.editor.enablePreview": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "prettier.documentSelectors": ["*.{ts,tsx}"],
+  "prettier.configPath": "",
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "workbench.editor.untitled.hint": "hidden",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.tabs.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--ignore=E501"]
 }
