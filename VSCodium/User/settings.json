@@ -36,5 +36,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--ignore=E501"]
+  "python.linting.flake8Args": ["--ignore=E501"],
+  "git.countBadge": "tracked",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.prettierPath": "/usr/local/lib/node_modules/prettier/"
 }
