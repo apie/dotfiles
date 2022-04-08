@@ -45,6 +45,7 @@ abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 abbr weeknumber date +%V
 abbr rdiff diff
+abbr ptest 'docker-compose run --rm -uroot pre-deploy pytest'
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
