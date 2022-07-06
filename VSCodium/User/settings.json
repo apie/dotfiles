@@ -41,5 +41,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.prettierPath": "/usr/local/lib/node_modules/prettier/"
+  "prettier.prettierPath": "/usr/local/lib/node_modules/prettier/",
+  "update.mode": "none"
 }
