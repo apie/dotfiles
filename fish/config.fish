@@ -48,6 +48,7 @@ abbr rdiff diff
 abbr ptest 'docker-compose run --rm -uroot pre-deploy pytest'
 abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --write-subs
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
+abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
 
 #Aliases
 alias manage 'docker-compose run --rm pre-deploy ./manage.py'
