@@ -40,6 +40,8 @@ let g:netrw_altv=1
 let g:netrw_liststyle=3  "tree
 
 " -- HOTKEYS ---
+"pascal compile with assertions and run
+map <F1> :w<enter>:!clear; fpc -Sa -oprogram % && echo && ./program<enter>
 "save + pytest
 map <F2> :w<enter>:!pytest -sx %<enter>
 "save
