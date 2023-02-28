@@ -1,2 +1,2 @@
 colorscheme murphy
-set gfn=Monospace\ 11
+set gfn=Monospace\ 13
