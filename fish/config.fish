@@ -34,7 +34,6 @@ abbr reflog git reflog
 abbr cropr "cd ~/clones/cropr_project/; and activate"
 abbr cloudfarm "cd ~/clones/cloud_farm/; and activate"
 abbr scan "cd ~/clones/scan_project/; and activate; and source config/scan_gis_dev.env"
-abbr ncn "cd ~/clones/ncn_project/; and activate"
 abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
 abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
