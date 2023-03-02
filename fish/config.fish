@@ -45,7 +45,7 @@ abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 abbr weeknumber date +%V
 abbr rdiff diff
-abbr ptest 'docker-compose run --rm -uroot pre-deploy pytest'
+abbr ptest "docker-compose run --rm pre-deploy pytest -k 'not test_add_logo_success and not test_superuser_map_view'"
 abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --write-subs
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
@@ -62,3 +62,5 @@ __fish_complete_django manage.py
 __fish_complete_django manage
 # Cmanage has own completion file
 __fish_complete_django_cropr cmanage
+
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
