@@ -1,4 +1,4 @@
-colorscheme delek
+colorscheme evening "or elflord
 noremap ; :
 set encoding=utf-8
 set noswapfile

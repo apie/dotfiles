@@ -42,5 +42,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.prettierPath": "/usr/local/lib/node_modules/prettier/",
-  "update.mode": "none"
+  "update.mode": "none",
+  "git.openRepositoryInParentFolders": "always"
 }
