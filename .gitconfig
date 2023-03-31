@@ -34,3 +34,5 @@
 	defaultBranch = main
 [merge]
 	conflictstyle = diff3
+[gpg "ssh"]
+	allowedSignersFile = /home/denick/.config/git/allowed_signers
