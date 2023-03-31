@@ -63,4 +63,4 @@ __fish_complete_django manage
 # Cmanage has own completion file
 __fish_complete_django_cropr cmanage
 
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
