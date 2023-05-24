@@ -36,3 +36,9 @@
 	conflictstyle = diff3
 [gpg "ssh"]
 	allowedSignersFile = /home/denick/.config/git/allowed_signers
+[gpg]
+	format = ssh
+[user]
+    signingkey = /home/denick/.ssh/id_ed25519.pub
+[commit]
+    gpgsign = true
