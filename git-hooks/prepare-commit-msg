@@ -3,7 +3,7 @@
 # Example: scan-1234-some-cool-branch-name -> [SCAN-1234]
 # Based on https://stackoverflow.com/questions/19871484/prepend-git-commit-message-with-partial-branch-name
 BRANCH_NAME=$(git symbolic-ref --short HEAD) || ''
-if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "master" ] && [ "$BRANCH_NAME" != "develop" ]; then
+if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "master" ] && [ "$BRANCH_NAME" != "main" ] && [ "$BRANCH_NAME" != "develop" ]; then
     TRIMMED=$(echo $BRANCH_NAME | sed -e 's:^\([^-]*-[^-]*\)-.*:\1:' -e 'y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/')
     # In case of amending a commit, the prefix is already there, so remove it first
     sed -i -e "1s:^\[$TRIMMED\] ::" $1
