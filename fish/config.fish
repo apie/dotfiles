@@ -38,23 +38,25 @@ abbr inspection "cd ~/clones/scan_inspection/;"
 abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
 abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
+# use new docker compose command
+abbr docker-compose docker compose
 abbr d ls
 abbr avc ssh apie@denickm-vps
-abbr com docker-compose run --rm pre-deploy
+abbr com docker compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 abbr weeknumber date +%V
 abbr rdiff diff
-abbr ptest "docker-compose run --rm pre-deploy pytest -k 'not test_add_logo_success and not test_superuser_map_view'"
+abbr ptest "docker compose run --rm pre-deploy pytest -k 'not test_add_logo_success and not test_superuser_map_view'"
 abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --write-subs
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
 
 #Aliases
-alias manage 'docker-compose run --rm pre-deploy ./manage.py'
+alias manage 'docker compose run --rm pre-deploy ./manage.py'
 abbr sp manage shell_plus --quiet-load
 # cropr manage
-alias cmanage 'docker-compose run --rm pre-deploy ./manage.py'
+alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
