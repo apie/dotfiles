@@ -66,3 +66,8 @@ __fish_complete_django manage
 __fish_complete_django_cropr cmanage
 
 type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+#Variables
+set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
+set --export GITHUB_DEFAULT_REVIEWER_mijnboerennatuur @Crop-R/greenteam
+set --export GITHUB_DEFAULT_REVIEWER_scan_inspection @Crop-R/greenteam
