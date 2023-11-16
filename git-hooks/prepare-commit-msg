@@ -2,8 +2,8 @@
 # Search for a dash-separated start of the branch name (like a JIRA ticket number) and prepend the commit msg with the first two parts of it, converts to upper case and wraps it in brackets and appends a space.
 # Example: scan-1234-some-cool-branch-name -> [SCAN-1234]
 # Based on https://stackoverflow.com/questions/19871484/prepend-git-commit-message-with-partial-branch-name
-BRANCH_NAME=$(git symbolic-ref --short HEAD) || ''
-if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "master" ] && [ "$BRANCH_NAME" != "main" ] && [ "$BRANCH_NAME" != "develop" ] && [[ "$BRANCH_NAME" =~ ^.+-[0-9]+ ]]; then
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD) || ''
+if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "HEAD" ] && [ "$BRANCH_NAME" != "master" ] && [ "$BRANCH_NAME" != "main" ] && [ "$BRANCH_NAME" != "develop" ] && [[ "$BRANCH_NAME" =~ ^.+-[0-9]+ ]]; then
     TRIMMED=$(echo $BRANCH_NAME | sed -e 's:^\([^-]*-[0-9]*\)[-_].*:\1:' -e 'y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/')
     # In case of amending a commit, the prefix is already there, so remove it first
     sed -i -e "1s:^\[$TRIMMED\] ::" $1
