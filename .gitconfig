@@ -18,6 +18,7 @@
   torelease = "!git log $(git describe --tags --abbrev=0)..master --oneline"
   pullall = "!for RMT in $(git remote); do git pull -v $RMT $1; echo; done;"
   pushall = "!for RMT in $(git remote); do git push -v $RMT $1; echo; done;"
+  praise = blame
 [core]
   excludesfile = ~/.gitignore
 [log]
