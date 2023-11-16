@@ -58,6 +58,7 @@ alias manage 'docker compose run --rm pre-deploy ./manage.py'
 abbr sp manage shell_plus --quiet-load
 # cropr manage
 alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
+alias kubectl 'microk8s kubectl'
 
 # Fish autocomplete for manage.py
 __fish_complete_django manage.py
