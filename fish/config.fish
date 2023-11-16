@@ -51,6 +51,7 @@ abbr ptest "docker compose run --rm pre-deploy pytest -k 'not test_add_logo_succ
 abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --write-subs
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
+abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/main..origin/develop'
 
 #Aliases
 alias manage 'docker compose run --rm pre-deploy ./manage.py'
