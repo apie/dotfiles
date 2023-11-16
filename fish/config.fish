@@ -39,7 +39,7 @@ abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
 abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
 # use new docker compose command
-abbr docker-compose docker compose
+alias docker-compose=docker compose
 abbr d ls
 abbr avc ssh apie@denickm-vps
 abbr com docker compose run --rm pre-deploy
