@@ -41,7 +41,7 @@ abbr benb "cd ~/clones/public_farm/; and activate"
 # use new docker compose command
 alias docker-compose=docker compose
 abbr d ls
-abbr avc ssh apie@denickm-vps
+abbr avc ssh apie@denickm-vps2
 abbr com docker compose run --rm pre-deploy
 abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
