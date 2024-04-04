@@ -28,7 +28,14 @@
 [pull]
   rebase = true
 [diff]
+  tool = difftastic
   colorMoved = zebra
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+  difftool = true
 [fetch]
   prune = true
 [init]
