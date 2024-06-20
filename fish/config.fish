@@ -52,6 +52,7 @@ abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --wr
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
 abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/main..origin/develop'
+abbr ddown 'docker compose down'
 
 #Aliases
 alias manage 'docker compose run --rm pre-deploy ./manage.py'
