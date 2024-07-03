@@ -61,6 +61,7 @@ abbr sp manage shell_plus --quiet-load
 alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
+alias e 'source ~/projects/tooling/empower.fish'
 
 # Fish autocomplete for manage.py
 #__fish_complete_django manage.py
