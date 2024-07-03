@@ -31,12 +31,12 @@ abbr bisect git bisect
 abbr reset git reset
 abbr reflog git reflog
 # Envs
-abbr cropr "cd ~/clones/cropr_project/; and activate"
-abbr cloudfarm "cd ~/clones/cloud_farm/; and activate"
-abbr scan "cd ~/clones/scan_project/; and activate; and source config/scan_gis_dev.env"
-abbr inspection "cd ~/clones/scan_inspection/;"
-abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
-abbr benb "cd ~/clones/public_farm/; and activate"
+#abbr cropr "cd ~/clones/cropr_project/; and activate"
+#abbr cloudfarm "cd ~/clones/cloud_farm/; and activate"
+#abbr scan "cd ~/clones/scan_project/; and activate; and source config/scan_gis_dev.env"
+#abbr inspection "cd ~/clones/scan_inspection/;"
+#abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
+#abbr benb "cd ~/clones/public_farm/; and activate"
 # Other
 # use new docker compose command
 alias docker-compose=docker compose
@@ -63,15 +63,15 @@ alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 
 # Fish autocomplete for manage.py
-__fish_complete_django manage.py
+#__fish_complete_django manage.py
 # Fish autocomplete for 'manage' alias
-__fish_complete_django manage
+#__fish_complete_django manage
 # Cmanage has own completion file
-__fish_complete_django_cropr cmanage
+#__fish_complete_django_cropr cmanage
 
 type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 #Variables
-set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
-set --export GITHUB_DEFAULT_REVIEWER_mijnboerennatuur @Crop-R/greenteam
-set --export GITHUB_DEFAULT_REVIEWER_scan_inspection @Crop-R/greenteam
+#set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
+#set --export GITHUB_DEFAULT_REVIEWER_mijnboerennatuur @Crop-R/greenteam
+#set --export GITHUB_DEFAULT_REVIEWER_scan_inspection @Crop-R/greenteam
