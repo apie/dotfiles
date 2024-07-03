@@ -21,6 +21,7 @@
   praise = blame
 [core]
   excludesfile = ~/.gitignore
+  editor = vim
 [log]
   decorate = auto
 [rebase]
