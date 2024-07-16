@@ -5,7 +5,8 @@ abbr branch git branch
 abbr checkout git checkout
 abbr cherry-pick git cherry-pick
 abbr ch git cherry-pick
-abbr co git checkout
+# abbr co git checkout
+abbr gco git checkout
 abbr commit git commit
 abbr c git commit
 abbr ca git commit -am
@@ -47,7 +48,7 @@ abbr skforward ssh -D 8080 ssh.scintilla.utwente.nl
 abbr logs journalctl -r
 abbr weeknumber date +%V
 abbr rdiff diff
-abbr ptest "docker compose run --rm pre-deploy pytest -k 'not test_add_logo_success and not test_superuser_map_view'"
+#abbr ptest "docker compose run --rm pre-deploy pytest -k 'not test_add_logo_success and not test_superuser_map_view'"
 abbr vrt yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot --write-subs
 abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
@@ -55,10 +56,10 @@ abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abb
 abbr ddown 'docker compose down'
 
 #Aliases
-alias manage 'docker compose run --rm pre-deploy ./manage.py'
-abbr sp manage shell_plus --quiet-load
+#alias manage 'docker compose run --rm pre-deploy ./manage.py'
+#abbr sp manage shell_plus --quiet-load
 # cropr manage
-alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
+#alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 alias e 'source ~/projects/tooling/empower.fish'
@@ -70,7 +71,7 @@ alias e 'source ~/projects/tooling/empower.fish'
 # Cmanage has own completion file
 #__fish_complete_django_cropr cmanage
 
-type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+#type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 #Variables
 #set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
