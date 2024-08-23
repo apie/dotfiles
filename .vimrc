@@ -28,6 +28,8 @@ set autoindent
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 
+autocmd BufNewFile,BufRead *.fish set syntax=bash
+
 " Searching
 set showmatch " Shows matching brackets etc.
 set hlsearch
