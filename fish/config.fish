@@ -63,6 +63,7 @@ abbr ddown 'docker compose down'
 alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 alias e 'source ~/projects/tooling/empower.fish'
+alias empowered '~/projects/tooling/empower.sh'
 
 # Fish autocomplete for manage.py
 #__fish_complete_django manage.py
@@ -77,3 +78,6 @@ alias e 'source ~/projects/tooling/empower.fish'
 #set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
 #set --export GITHUB_DEFAULT_REVIEWER_mijnboerennatuur @Crop-R/greenteam
 #set --export GITHUB_DEFAULT_REVIEWER_scan_inspection @Crop-R/greenteam
+set --export PREPEND_COMMIT_MESSAGE_HOOK_ENABLED true
+# Use pudb as default python debugger; When using "breakpoint()".
+set --export PYTHONBREAKPOINT "pudb.set_trace"
