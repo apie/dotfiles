@@ -88,5 +88,11 @@ set --export PREPEND_COMMIT_MESSAGE_HOOK_ENABLED true
 # Use pudb as default python debugger; When using "breakpoint()".
 set --export PYTHONBREAKPOINT "pudb.set_trace"
 
-# Misc
+#@ Misc
+## Fix default audio output (if on the relevant PC)
+if test (hostname) = ltsp22-5254;
+    pactl set-card-profile alsa_card.pci-0000_01_00.1 output:hdmi-stereo-extra2
+    pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2
+end
+
 #type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
