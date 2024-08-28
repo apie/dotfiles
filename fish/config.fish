@@ -68,6 +68,10 @@ alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 alias e 'source ~/projects/tooling/empower.fish'
 alias empowered '~/projects/tooling/empower.sh'
+# Add function/alias that accepts arguments but ignores them, that opens the remote, since this muscle memory is hard to shake off :)
+function hub
+    xdg-open (git remote get-url --all origin|sed -E "s=git@(.+):(.*)\.git=http://\1/\2=")
+end
 
 #@ Fish autocomplete for manage.py
 #__fish_complete_django manage.py
