@@ -14,6 +14,7 @@ filetype plugin indent on
 set paste
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *  if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+" Use equalprg to format xml files with xmllint. Use visual mode and then press = or press G=gg to apply to whole file.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 set showcmd "show the keys you are pressing
 
