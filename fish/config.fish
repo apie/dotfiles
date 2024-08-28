@@ -1,5 +1,7 @@
+#@ General
 set fish_greeting #No greeting
-# Git abbreviations
+
+#@ Git abbreviations
 abbr add git add
 abbr branch git branch
 abbr checkout git checkout
@@ -31,16 +33,16 @@ abbr revert git revert
 abbr bisect git bisect
 abbr reset git reset
 abbr reflog git reflog
-# Envs
+
+#@ Envs activate shortcuts abbreviations
 #abbr cropr "cd ~/clones/cropr_project/; and activate"
 #abbr cloudfarm "cd ~/clones/cloud_farm/; and activate"
 #abbr scan "cd ~/clones/scan_project/; and activate; and source config/scan_gis_dev.env"
 #abbr inspection "cd ~/clones/scan_inspection/;"
 #abbr mben "cd ~/clones/mijnboerennatuur/; and activate"
 #abbr benb "cd ~/clones/public_farm/; and activate"
-# Other
-# use new docker compose command
-alias docker-compose=docker compose
+
+#@ Other abbreviations
 abbr d ls
 abbr avc ssh apie@denickm-vps2
 abbr com docker compose run --rm pre-deploy
@@ -54,10 +56,12 @@ abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
 abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/main..origin/develop'
 abbr ddown 'docker compose down'
-
-#Aliases
-#alias manage 'docker compose run --rm pre-deploy ./manage.py'
 #abbr sp manage shell_plus --quiet-load
+
+#@ Aliases
+# use new docker compose command
+alias docker-compose=docker compose
+#alias manage 'docker compose run --rm pre-deploy ./manage.py'
 # cropr manage
 #alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 alias kubectl 'microk8s kubectl'
@@ -65,19 +69,24 @@ alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/r
 alias e 'source ~/projects/tooling/empower.fish'
 alias empowered '~/projects/tooling/empower.sh'
 
-# Fish autocomplete for manage.py
+#@ Fish autocomplete for manage.py
 #__fish_complete_django manage.py
 # Fish autocomplete for 'manage' alias
 #__fish_complete_django manage
 # Cmanage has own completion file
 #__fish_complete_django_cropr cmanage
 
-#type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-#Variables
+#@ Variables
+## Git hook variables
 #set --export GITHUB_DEFAULT_REVIEWER_scan_project @Crop-R/greenteam
 #set --export GITHUB_DEFAULT_REVIEWER_mijnboerennatuur @Crop-R/greenteam
 #set --export GITHUB_DEFAULT_REVIEWER_scan_inspection @Crop-R/greenteam
 set --export PREPEND_COMMIT_MESSAGE_HOOK_ENABLED true
+
+## Python variables
 # Use pudb as default python debugger; When using "breakpoint()".
 set --export PYTHONBREAKPOINT "pudb.set_trace"
+
+# Misc
+#type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
