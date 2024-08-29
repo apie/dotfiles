@@ -66,8 +66,6 @@ alias docker-compose=docker compose
 #alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
-alias e 'source ~/projects/tooling/empower.fish'
-alias empowered '~/projects/tooling/empower.sh'
 # Add function/alias that accepts arguments but ignores them, that opens the remote, since this muscle memory is hard to shake off :)
 function hub
     xdg-open (git remote get-url --all origin|sed -E "s=git@(.+):(.*)\.git=http://\1/\2=")
@@ -102,4 +100,25 @@ function fix_default_audio_output
 end
 fix_default_audio_output
 
+# Ytec related things.
+# Only makes sense on a PC with Ytec tooling present
+if type -q ~/projects/tooling/empower.fish
+    alias e 'source ~/projects/tooling/empower.fish'
+    alias empowered '~/projects/tooling/empower.sh'
+    function fab
+        # Remove this function so that we can call the real program
+        functions --erase fab
+        # If empowered
+        if test $_YTEC_EMPOWER_PYTHONPATH;
+            # run the program
+            fab $argv
+        else
+            # If not empowered
+            # Run empowered
+            empowered fab $argv
+            # Empower now. As last step since it hijacks our shell
+            e
+        end
+    end
+end
 #type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
