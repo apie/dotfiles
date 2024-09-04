@@ -68,7 +68,7 @@ alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
 # Add function/alias that accepts arguments but ignores them, that opens the remote, since this muscle memory is hard to shake off :)
 function hub
-    xdg-open (git remote get-url --all origin|sed -E "s=git@(.+):(.*)\.git=http://\1/\2=")
+    xdg-open (git remote get-url --all origin|sed -E "s=ssh://git@(gitlab.+):[[:digit:]]+(.*)=https://\1\2=" |sed -E "s=git@(.+):(.*)\.git=http://\1/\2=")
 end
 
 #@ Fish autocomplete for manage.py
