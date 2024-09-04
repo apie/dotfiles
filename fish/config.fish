@@ -105,6 +105,13 @@ fix_default_audio_output
 if type -q ~/projects/tooling/empower.fish
     alias e 'source ~/projects/tooling/empower.fish'
     alias empowered '~/projects/tooling/empower.sh'
+    if test -d ~/projects
+        function gp
+            # 'Go project'
+            # Quickly go to a project dir and empower if needed
+            cd ~/projects/*(string join '-' $argv); and if test -z $_YTEC_EMPOWER_PYTHONPATH; e; end
+        end
+    end
     function fab
         # Remove this function so that we can call the real program
         functions --erase fab
