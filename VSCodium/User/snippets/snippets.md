@@ -26,3 +26,7 @@ def dbg(msg='', *args, r=False, bp=False):
 ```python pdb
 import pdb;pdb.set_trace() # --git-push-block-marker--
 ```
+
+```python pp
+from pprint import pprint as pp # --git-push-block-marker--
+```
