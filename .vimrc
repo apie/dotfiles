@@ -1,4 +1,7 @@
-colorscheme evening "or elflord
+colorscheme elflord
+if hostname() == 'tuxedo'
+    colorscheme evening
+endif
 noremap ; :
 set encoding=utf-8
 set noswapfile
