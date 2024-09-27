@@ -93,7 +93,7 @@ set --export PYTHONBREAKPOINT "pudb.set_trace"
 #@ Misc
 ## Fix default audio output (if on the relevant PC)
 function fix_default_audio_output
-    if test (hostname) = ltsp22-5254;
+    if string match 'ltsp*' (hostname) --quiet;
         pactl set-card-profile alsa_card.pci-0000_01_00.1 output:hdmi-stereo-extra2
         pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2
     end
