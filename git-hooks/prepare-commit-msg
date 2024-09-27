@@ -4,6 +4,7 @@
 # Based on https://stackoverflow.com/questions/19871484/prepend-git-commit-message-with-partial-branch-name
 test "$PREPEND_COMMIT_MESSAGE_HOOK_ENABLED" == "true" || exit 0
 test "$3" == "HEAD" && exit 0  # Amending commit. Dont prefix twice.
+grep "^fixup! " $1 && exit 0  # Dont prefix fixup commits
 
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD) || ''
 if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "HEAD" ] && [ "$BRANCH_NAME" != "master" ] && [ "$BRANCH_NAME" != "main" ] && [ "$BRANCH_NAME" != "develop" ] && [[ "$BRANCH_NAME" =~ ^.+-[0-9]+ ]]; then
