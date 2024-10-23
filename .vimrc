@@ -78,3 +78,12 @@ set foldmethod=indent
 set foldlevel=99
 " folding with spacebar
 nnoremap <space> za
+
+
+fun! ShowFuncName()
+    " Show current python function name
+    echohl ModeMsg
+    echo getline(search("^\\s*def\\s\\+\\w\\+\\s*(.*):$", 'bWn'))
+    echohl None
+endfun
+map f :call ShowFuncName() <CR>
