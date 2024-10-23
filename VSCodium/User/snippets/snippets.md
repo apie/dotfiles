@@ -1,7 +1,11 @@
 # Example of a snippet:
+
 # $SCOPES $PREFIXES $NAME $DESCRIPTION
+
 # Snippet parts can be omitted by using underscore sign `_`:
+
 # _ $PREFIXES _ $DESCRIPTION
+
 # Autocomplete for variables inside the code block is not shown when you type `$`, but it's there
 
 ```python dbgfun Debug-print-function-with-lineno Debug-func-that-prints-filename-and-lineno-and-custom-msg
@@ -29,4 +33,22 @@ import pdb;pdb.set_trace() # --git-push-block-marker--
 
 ```python pp
 from pprint import pprint as pp # --git-push-block-marker--
+```
+
+```python fixmetag add-a-tag-fixme-to-tests Adds-a-tag-fixme-so-you-can-easily-run-only-the-test-you-are-working-on-by-adding-'--tags-fixme'-to-the-command-line.
+from django.test import tag # --git-push-block-marker--
+@tag('fixme') # --git-push-block-marker--
+```
+
+```python blockmarker
+ # --git-push-block-marker--
+```
+
+```python emailfile
+# --git-push-block-marker--
+from django.core.files import File
+with open('./email.html', 'w') as f:
+    myfile = File(f)
+    myfile.write(mail)
+myfile.closed
 ```
