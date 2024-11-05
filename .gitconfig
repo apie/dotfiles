@@ -19,7 +19,7 @@
   pullall = "!for RMT in $(git remote); do git pull -v $RMT $1; echo; done;"
   pushall = "!for RMT in $(git remote); do git push -v $RMT $1; echo; done;"
   praise = blame
-  branch-delete-merged = "!git branch --merged | grep -Ev '(^\*|^\s+master$|\s+main$|\s+develop$)' | xargs git branch -d"
+  #branch-delete-merged = "!git branch --merged | grep -Ev '(^\*|^\s+master$|\s+main$|\s+develop$)' | xargs git branch -d"
 [core]
   excludesfile = ~/.gitignore
   editor = vim
