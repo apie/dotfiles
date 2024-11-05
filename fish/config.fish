@@ -58,6 +58,9 @@ abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abb
 abbr ddown 'docker compose down'
 #abbr sp manage shell_plus --quiet-load
 abbr zonnepanelen 'curl http://192.168.2.{(seq 1 20)}/home.cgi --connect-timeout 0.1 --silent --fail|sed -n 11p'
+if type -q /snap/bin/codium
+    abbr code codium
+end
 
 #@ Aliases
 # use new docker compose command
