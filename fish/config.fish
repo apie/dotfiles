@@ -113,7 +113,8 @@ if type -q ~/projects/tooling/empower.fish
         function gp
             # 'Go project'
             # Quickly go to a project dir and empower if needed
-            cd ~/projects/*(string join '-' $argv); and if test -z $_YTEC_EMPOWER_PYTHONPATH; e; end
+            # Match project name based on arguments, joined by dashes and match both start, middle and end of string
+            cd ~/projects/*(string join '-' $argv)*; and if test -z $_YTEC_EMPOWER_PYTHONPATH; e; end
         end
     end
     function fab
