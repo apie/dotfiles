@@ -86,4 +86,4 @@ fun! ShowFuncName()
     echo getline(search("^\\s*def\\s\\+\\w\\+\\s*(.*):$", 'bWn'))
     echohl None
 endfun
-map f :call ShowFuncName() <CR>
+map F :call ShowFuncName() <CR>
