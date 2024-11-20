@@ -1,5 +1,12 @@
 #@ General
-set fish_greeting #No greeting
+# Custom greeting using a script
+if test -x ~/greet.py
+    function fish_greeting
+        ~/greet.py
+    end
+else
+    set fish_greeting # No greeting
+end
 
 #@ Git abbreviations
 abbr add git add
