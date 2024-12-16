@@ -123,7 +123,7 @@ if type -q ~/projects/tooling/empower.fish
             # Match project name based on arguments, joined by dashes and match both start, middle and end of string. Take first match in case of multiple matches
             # -quit to stop after first match was found
             # grep to get correct exit code on no match
-            cd (find ~/projects/ -maxdepth 1 -type d -name '*'(string join '-' $argv)'*' -print -quit | grep .; or echo 'DIR NOT FOUND'); and if test -z $_YTEC_EMPOWER_PYTHONPATH; e; end
+            cd (find -L ~/projects/ -maxdepth 1 -type d -name '*'(string join '-' $argv)'*' -print -quit | grep .; or echo 'DIR NOT FOUND'); and if test -z $_YTEC_EMPOWER_PYTHONPATH; e; end
         end
     end
     function fab
