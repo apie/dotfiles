@@ -1,8 +1,10 @@
 #@ General
 # Custom greeting using a script
-if test -x ~/greet.py
+if test -x ~/greet.py; and ! test -e /tmp/greeted
     function fish_greeting
         ~/greet.py
+        # Greet me only once a boot
+        touch /tmp/greeted
     end
 else
     set fish_greeting # No greeting
