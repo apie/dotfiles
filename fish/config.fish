@@ -145,3 +145,6 @@ if type -q ~/projects/tooling/empower.fish
     end
 end
 #type -q /home/linuxbrew/.linuxbrew/bin/brew; and eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# Start ssh agent (fish script)
+fish_ssh_agent
