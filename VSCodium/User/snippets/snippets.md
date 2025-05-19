@@ -52,3 +52,16 @@ with open('./email.html', 'w') as f:
     myfile.write(mail)
 myfile.closed
 ```
+
+
+```python ignoredeprecations
+# --git-push-block-marker
+import warnings
+from django.utils.deprecation import RemovedInDjango50Warning
+
+warnings.filterwarnings(action="ignore", category=RemovedInDjango50Warning)
+```
+
+```django-html wagwan
+<h1>WAGWAN</h1>
+```
