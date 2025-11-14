@@ -70,6 +70,8 @@ abbr zonnepanelen 'curl http://192.168.2.{(seq 1 20)}/home.cgi --connect-timeout
 if type -q /snap/bin/codium
     abbr code codium
 end
+abbr scherm2aan xrandr --output HDMI-2 --auto --right-of HDMI-1
+abbr scherm2uit xrandr --output HDMI-2 --off
 
 #@ Aliases
 # use new docker compose command
