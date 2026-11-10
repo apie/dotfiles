@@ -6,7 +6,7 @@ function klaar
     # 3. klaar <command>
     # In the last case also the command is printed.
 
-    if eval $argv
+    if [ $status -eq 0 ]
         set MSG 'Ik ben klaar'
     else
         set MSG 'Er ging iets mis'
