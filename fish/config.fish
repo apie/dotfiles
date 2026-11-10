@@ -65,6 +65,7 @@ abbr vrtno yt-dlp --username 'Bugmenotvrt@mailinator.com' --password bugmenot
 abbr masterdevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/master..origin/develop'
 abbr maindevdiff 'git fetch origin && git log --oneline --graph --decorate --abbrev-commit origin/main..origin/develop'
 abbr ddown 'docker compose down'
+abbr yt-dlp yt-dlp --write-subs
 #abbr sp manage shell_plus --quiet-load
 abbr zonnepanelen 'curl http://192.168.2.{(seq 1 20)}/home.cgi --connect-timeout 0.1 --silent --fail|sed -n 11p'
 if type -q /snap/bin/codium
@@ -81,6 +82,7 @@ alias docker-compose=docker compose
 #alias cmanage 'docker compose run --rm pre-deploy ./manage.py'
 alias kubectl 'microk8s kubectl'
 alias ctop 'docker run --rm -ti --name=ctop --volume /var/run/docker.sock:/var/run/docker.sock:ro quay.io/vektorlab/ctop:latest'
+alias feh 'feh --scale-down'
 # Add function/alias that accepts arguments but ignores them, that opens the remote, since this muscle memory is hard to shake off :)
 function hub
     xdg-open (git remote get-url --all origin|sed -E "s=ssh://git@(gitlab.+):[[:digit:]]+(.*)=https://\1\2=" |sed -E "s=git@(.+):(.*)\.git=http://\1/\2=")

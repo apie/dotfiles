@@ -61,8 +61,8 @@ map <F5> :!git diff %<enter>
 map <F6> :!git status<enter>
 "git diff current file ignoring whitespace
 map <F7> :!git diff -w %<enter><enter>
-"run current file with python
-map <F8> :w<enter>:!python3 %<enter>
+"run current file with uv
+map <F8> :w<enter>:!uv run --no-project %<enter>
 
 " --- MAPPINGS ---
 let mapleader = "-"
